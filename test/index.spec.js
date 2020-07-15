@@ -42,7 +42,9 @@ describe('HazyCalculator takes three parameters', () => {
   it('subtracts numbers even when one is a string with a number in it', () => {
     expect(calculate('8', '-', 6)).to.equal(2)
   })
-
+  it('Divides numbers even when one is a string with a number in it', () => {
+    expect(calculate('4', '/', 2)).to.equal(2)
+  })
   /**
    Time to learn something new
    Read more about undefined

@@ -24,7 +24,7 @@ function calculate(numberOne, operation, numberTwo) {
   // so to turn our string into an intiger we use the parseInt function.
 
   // The 'switch' statement is used to perform different actions based on different conditions. 
-  // Each case is a different conditon that if the equation given matches one it will be ran through
+  // Each case is a different conditon that if the equation given does not match it will run the case that does or the default.
   switch (operation) {
     case '+':
       return parseInt(numberOne) + parseInt(numberTwo)
@@ -38,7 +38,7 @@ function calculate(numberOne, operation, numberTwo) {
       return 'Operation not yet supported. You sent ' + operation
   }
 }
-
+ console.log(calculate(4,'/', 2))
 /**
  Export an object with two properties.
  One property is `calculate`. The value will be the calculate function.
